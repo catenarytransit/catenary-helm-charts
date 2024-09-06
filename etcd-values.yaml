@@ -1,0 +1,3 @@
+containerPorts.client = 12925
+containerPorts.peer = 12926
+containerPorts.metrics = 12927
