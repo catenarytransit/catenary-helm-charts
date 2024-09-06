@@ -1,0 +1,23 @@
+tls.enabled: true
+
+# Minimum Certificate duration for all the certificates, all certs duration will be validated against this.
+tls.certs.selfSigner.minimumCertDuration: 624h
+# Duration of CA certificates in hour
+tls.certs.selfSigner.caCertDuration: 43800h
+# Expiry window of CA certificates means a window before actual expiry in which CA certs should be rotated.
+tls.certs.selfSigner.caCertExpiryWindow: 648h
+# Duration of Client certificates in hour
+tls.certs.selfSigner.clientCertDuration: 672h
+# Expiry window of client certificates means a window before actual expiry in which client certs should be rotated.
+tls.certs.selfSigner.clientCertExpiryWindow: 48h
+# Duration of node certificates in hour
+tls.certs.selfSigner.nodeCertDuration: 8760h
+# Expiry window of node certificates means a window before actual expiry in which node certs should be rotated.
+tls.certs.selfSigner.nodeCertExpiryWindow: 168h
+
+# If set, the cockroachdb cert selfSigner will rotate the certificates before expiry.
+tls.certs.selfSigner.rotateCerts: true
+
+storage.persistentVolume.size: 300Gi
+
+statusstatefulset.replicas: 1
